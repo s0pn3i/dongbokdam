@@ -38,7 +38,9 @@ export default function Home({ dam }: any) {
 export async function getServerSideProps() {
   const {
     data: { dam },
-  } = await axios.get("http://localhost:3000/api/getDam");
+  } = await axios.get(
+    "https://dongbokdam-qojajedvt-s0pn3i.vercel.app/api/getDam"
+  );
   return {
     props: { dam },
   };
