@@ -31,16 +31,6 @@ export default function Home({ dam }: any) {
             height: ${dam}%;
           }
         }
-
-        @keyframes wave {
-          from {
-            height: ${dam}%;
-          }
-
-          to {
-            height: ${dam + 5}%;
-          }
-        }
       `}</style>
     </>
   );
